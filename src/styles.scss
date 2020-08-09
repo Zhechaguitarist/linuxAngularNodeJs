@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url("https://funart.pro/uploads/posts/2020-04/1588236046_18-p-temnie-brutalnie-foni-55.jpg");
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.text {
+  color: burlywood;
+  font-family: Roboto, sans-serif;
+}
+
+.block {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.text1 {
+  font-size: 30px;
+}
+
+.text2 {
+  font-size: 20px;
+}
+
+.text3 {
+  font-size: 10px;
+}
+
+.url {
+  color: darkgray;
+  font-style: italic;
+}
+
+/*#footer {
+  width: 1000px;
+  margin: -70px auto 0;
+  height: 100px;
+  position: relative;
+}*/
+
+.footer {
+  height: 67px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/963107882071950892/F5C6F71D54A20087B9EB2585BE3852651C33703C/?imw=512&amp;imh=254&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+}
+
+.equals-body-background-img {
+  background: transparent;
+}
+img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.img-block {
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+}
+
+#content {
+  height: 100%;
+}

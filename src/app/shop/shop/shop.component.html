@@ -1,0 +1,29 @@
+<div class="text block text1">
+  Название текущего проекта: {{title}}
+</div>
+
+<div class="text block text2">
+  Задний фон взят с
+  <a href="https://wallpaperscraft.ru/" target="_blank">
+    <span class="text url">WallpapersCraft</span>
+  </a>
+</div>
+
+<div class="text block text2">
+  <input class="text equals-body-background-img" type="text" [value]="title" (keyup.enter)="onInput($event)">
+  <p><strong>{{inputValue}}</strong></p>
+  <button class="text equals-body-background-img" (click)="changePicture()">Сменить картинку на {{currentPicture}}</button>
+</div>
+
+<div class="text block text2">
+  <input class="text equals-body-background-img" type="text" [(ngModel)]="inputValue">
+</div>
+
+<div class="img-block">
+  <img [src]="img" alt="picture">
+</div>
+
+<div class="block">
+  <p class="text block text2">Доступные магазины:</p>
+  <p class="text block text2" *ngFor="let an of another">{{an}}</p>
+</div>
