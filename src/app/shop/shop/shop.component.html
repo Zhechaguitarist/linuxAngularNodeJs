@@ -1,3 +1,4 @@
+<app-shop-dialog #shopDialogComponent></app-shop-dialog>
 <div class="text block text1">
   Название текущего проекта: {{title}}
 </div>
@@ -21,6 +22,10 @@
 
 <div class="img-block">
   <img [src]="img" alt="picture">
+</div>
+
+<div class="text block text2">
+  <button class="text equals-body-background-img" (click)="shopDialogComponent.showDialog()">Отобразить диалог магазина</button>
 </div>
 
 <div class="block">
