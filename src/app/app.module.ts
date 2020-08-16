@@ -6,7 +6,8 @@ import {ShopComponent} from './shop/shop/shop.component';
 import {FormsModule} from '@angular/forms';
 import {MenuComponent} from './menu/menu.component';
 import {ShopDialogComponent} from './shop/shop-dialog/shop-dialog.component';
-import {DialogModule} from 'primeng';
+import {ButtonModule, DialogModule} from 'primeng';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,13 @@ import {DialogModule} from 'primeng';
     MenuComponent,
     ShopDialogComponent
   ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        DialogModule
-    ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    DialogModule,
+    BrowserAnimationsModule,
+    ButtonModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

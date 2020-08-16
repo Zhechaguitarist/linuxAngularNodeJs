@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Output} from '@angular/core';
+import {Shop} from '../../models/shop';
 
 @Component({
   selector: 'app-shop',
@@ -15,6 +16,41 @@ export class ShopComponent {
   inputValue = '';
   isApple = true;
   currentPicture = 'клубнику';
+
+  @Output() shops: Shop[] = [
+    {
+      name: 'Music',
+      address: 'Таганская'
+    },
+    {
+      name: 'Sex',
+      address: 'Киевская'
+    },
+    {
+      name: 'Music',
+      address: 'Таганская'
+    },
+    {
+      name: 'Sex',
+      address: 'Киевская'
+    },
+    {
+      name: 'Music',
+      address: 'Таганская'
+    },
+    {
+      name: 'Sex',
+      address: 'Киевская'
+    },
+    {
+      name: 'Music',
+      address: 'Таганская'
+    },
+    {
+      name: 'Sex',
+      address: 'Киевская'
+    },
+  ]
 
   constructor() {}
 

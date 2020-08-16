@@ -1,8 +1,28 @@
 <p-dialog *ngIf="dialogIsVisible"
           [(visible)]="dialogIsVisible"
+          [dismissableMask]="true"
+          [modal]="true"
           [resizable]="false"
           [responsive]="true"
-          [modal]="true"
-          [dismissableMask]="true">
-  <p-header>{{title}}</p-header>
+          [style]="{
+            width: '500px',
+            height: '100%',
+            backgroundImage: 'url(https://funart.pro/uploads/posts/2020-04/1586157600_38-p-temnie-zadnie-foni-91.jpg)'}">
+  <div class="d-flex justify-content-between spaces" style="background-color: black">
+    <p-header class="text text2">{{title}}</p-header>
+    <p-button class="text text2" style="background-color: black">Закрыть</p-button>
+  </div>
+  <div class="text block text2">Здесь будет диалог магазина</div>
+  <div *ngFor="let shop of shops">
+    <div class="text block text2">
+      <div class="text1">
+        <span>Название: </span>
+        {{shop.name}}
+      </div>
+      <div>
+        <span>Адрес: </span>
+        {{shop.address}}
+      </div>
+    </div>
+  </div>
 </p-dialog>

@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Shop} from '../../models/shop';
 
 @Component({
   selector: 'app-shop-dialog',
@@ -12,6 +13,8 @@ export class ShopDialogComponent {
 
   /** Флаг видимости диалога магазина */
   dialogIsVisible: boolean = false;
+
+  @Input() shops: Shop[];
 
   constructor() { }
 
